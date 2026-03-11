@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List DOM Practice</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Student List</h1>
+
+<!-- Student Form -->
+<form id="student-form">
+
+    <label for="student-roll">Roll No:</label>
+    <input type="text" id="student-roll" placeholder="Enter roll number">
+
+    <label for="student-name">Student Name:</label>
+    <input type="text" id="student-name" placeholder="Enter student name">
+
+    <button type="submit" id="add-btn" disabled>Add Student</button>
+
+</form>
+
+<!-- Search Student -->
+<div style="text-align:center; margin-bottom:15px;">
+    <input type="text" id="search-box" placeholder="Search student">
+</div>
+
+<!-- Control Buttons -->
+<div style="text-align:center; margin-bottom:15px;">
+    <button id="sort-btn">Sort A-Z</button>
+    <button id="highlight-first">Highlight First Student</button>
+</div>
+
+<!-- Student List -->
+<ul id="student-list">
+    <!-- Students will appear here -->
+</ul>
+
+<!-- Student Count -->
+<p id="student-count" style="text-align:center;">
+    Total students: 0
+</p>
+
+<!-- Attendance Count -->
+<p id="attendance-count" style="text-align:center;">
+    Present: 0 , Absent: 0
+</p>
+
+<!-- Highlight Button (existing feature) -->
+<div style="text-align:center; margin-top:15px;">
+    <button id="highlight-btn">Highlight Students</button>
+</div>
+
+<!-- JS file -->
+<script src="dom.js"></script>
+
+</body>
+</html>
